@@ -71,7 +71,7 @@ img {
 .clear {
   clear: both;
 }
-
+  /* RESPONSIVENESS PER MOBILE(420PX) */
 @media screen and (max-width: 421px){
   #lezioni .row>.left,
   #lezioni .row>.right{
@@ -85,40 +85,49 @@ img {
     margin-top: 20px;
   }
   .container.grey{
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     margin-bottom: 50px;
   }
-  .container{
-    padding: 30px;
-  }
-  .row h1,
-  .row h3,
-  .row hr{
+#why div,
+#steps div,
+#lezioni div{
     max-width: 100%;
-  }
-/* }
-@media screen and (max-width: 1024px){
-  #lezioni .row>.left,
-  #lezioni .row>.right{
-    max-width: 100%;
-    width: 100%;
-    margin-top: 20px;
-  }
-  #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
-    max-width: 100%;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .container.grey{
-    max-width: 100%;
-    width: 1000px;
-    margin-bottom: 50px;
   }
    h1,
    h3,
-   hr{
+   hr,
+   p{
     max-width: 100%;
+ }
   }
-} */
+  /* RESPONSIVENESS PER TABLET(SURFACE) */
+  @media screen and (max-width: 1024px){
+    #lezioni .row>.left,
+    #lezioni .row>.right{
+      width: 100%;
+      margin-top: 20px;
+    }
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .container.grey{
+      width: 100%;
+      max-width: 1020px;
+      margin-bottom: 50px;
+    }
+  #why div,
+  #steps div,
+  #lezioni div{
+      max-width: 100%;
+    }
+    h1,
+    h3,
+    hr,
+    p{
+     max-width: 100%;
+  }
+    }
